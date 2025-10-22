@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+        <meta charset="UTF-8">        
+        <title>formulariio</title>
+        <style>
+
+        </style>
+     </head>
+     <body>
+        <h1>Formulari d'inscripció Cyberwall</h1>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="username">Create a username:</label>
+            <br>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Create a password:</label>
+            <br>
+            <input type="text" id="password" name="password" requiered>
+            <br>
+            <br>
+            <label for="birthday">Birthday:</label>
+            <br>
+            <input type="date" id="birthday" name="birthday" reuiered>
+            <br>
+            <label for="ocupacion">I am ...</label>
+            <br>
+            <select id="ocupacion" name="ocupacion" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="bussiness">Bussiness owner</option>
+                <option value="self-employed">Self-employed</option>
+                <option value="other">other</option>
+            </select>
+            <br>
+            <label for="mobile">Mobile Phone</label>
+            <br>
+            <input id="mobile" name="mobile" type="tel" required>
+            <br>
+            <label for="english">Select your English level (0-10)</label>
+            <br>
+            <input type="range" id="english" name="english" min="0" max="10" value="5">
+            <br>
+
+
+            <button>Sign me up</button>
+        </form>
+
+     </body>
+</html>
